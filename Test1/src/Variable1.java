@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 
 public class Variable1 {
     public static void main(String[] args) {
-        System.out.println("예제15");
+        System.out.println("예제1");
         byte a = 1;
         // 명령이 2개
         // 1. 예제1 이라는 문자열을 화면에 출력하라
