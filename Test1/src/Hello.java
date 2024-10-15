@@ -2,7 +2,7 @@ public class Hello {
     public static void main(String[] args) {
         // Hello World를 출력하는 클래스입니다.(코드가 아닌 주석이기 때문에 컴파일러가 스킵함)
         // main이 코드를 작동하게 함. 시작할때 무조건 main으로 시작.
-        System.out.println("Hello World!!");
+        System.out.println("Hello World");
         // 작은 사이즈의 프로그램 Hello, 안에 main method 실행, ln은 line.
         // main method 안에 System.out.println("Hello World"); 라는 명령을 넣어 실행
         // 출력된 값을 표시하는 화면 하단은 터미널. 오로지 개발자를 위한 화면.
