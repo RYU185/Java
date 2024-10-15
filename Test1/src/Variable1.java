@@ -30,7 +30,7 @@ public class Variable1 {
         // 때문에 내가 원하는 AB라는 값을 도출하기 위해 위의 A, B를 숫자가 아닌 "문자"로 인식하게 해야함
         System.out.println(""+ch1+ch2);
         System.out.println(""+ch1+ch2);
-        
+
         // System.out.println("한글"+1+2+3) 의 결과값이 한글123이 된 것과 원리가 같음.
         // 빈 문자열이 포함되면서 숫자가 아닌 문자의 더하기로 인식한다.
         System.out.println(ch1); // 결과값 A가 나오지만 유니코드 65를 출력하기 위한 방법은 무엇일까?
@@ -38,7 +38,7 @@ public class Variable1 {
                                   // + 기호는 숫자로 변환하라는 뜻
         System.out.println(+ch1 + +ch2); // 명시적으로 ch1, ch2에 +를 붙여 유니코드 상 131이라는 결과값을 유도함
 
-        String name = "김동근"; // 문자열. 문자가 여러개 모인 것.
+        String name = "김동근"; // 문자열. 문자가 여러개 모인 것. "김동근"은 ㄱㅣㅁㄷㅗㅇㄱㅡㄴ 이 모여 만들어진 문자열이다.
         // 문자는 char, 문자열은 String 사용.
         // 지정하는 문자열에 따라 바이트가 달라지는 가변성을 지님
         System.out.println(name);
