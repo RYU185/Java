@@ -52,7 +52,6 @@ public class Variable1 {
         2. 특수문자 중 _(밑줄)과 $만 사용 가능( _: 영어로 underscore)
         3. 숫자 가능하지만 첫글자로는 사용 불가 (a1 가능, 1a 불가능)
         4. 예약어는 사용 불가. ex) public, class, void, main, byte, int, char, true, String, etc...
-
         상수는 변수와 구분하기 위해 대문자로.
 
          */
