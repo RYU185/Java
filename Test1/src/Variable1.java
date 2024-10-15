@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 
 public class Variable1 {
     public static void main(String[] args) {
-        System.out.println("예제3");
+        System.out.println("예제1");
         byte a = 1;
         // 명령이 2개
         // 1. 예제1 이라는 문자열을 화면에 출력하라
@@ -23,12 +23,14 @@ public class Variable1 {
         // 문자 여러개는 " "(쌍따옴표)
 
         System.out.println(ch1+ch2);
-        // Q: 출력값이 131? 왜 AB가 아니고 131이라는 엉뚱한 숫자가 출력되는가?
+        // Q: 출력값이 131. 왜 AB가 아니고 131이라는 엉뚱한 숫자가 출력되는가?
         // A: 자바의 동작방식을 이해해야함
         // 자바는 +를 우선적으로 숫자로서 더해야 한다는 노력을 함. 우선적으로 숫자화하여 연산하려는 자바의 동작방식.
         // 그러므로 유니코드 상의 숫자로 치환하여 계산한다. (유니코드 상 A가 65, B가 66일 것이다.)
         // 때문에 내가 원하는 AB라는 값을 도출하기 위해 위의 A, B를 숫자가 아닌 "문자"로 인식하게 해야함
         System.out.println(""+ch1+ch2);
+        System.out.println(""+ch1+ch2);
+        
         // System.out.println("한글"+1+2+3) 의 결과값이 한글123이 된 것과 원리가 같음.
         // 빈 문자열이 포함되면서 숫자가 아닌 문자의 더하기로 인식한다.
         System.out.println(ch1); // 결과값 A가 나오지만 유니코드 65를 출력하기 위한 방법은 무엇일까?
