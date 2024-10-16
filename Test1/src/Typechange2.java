@@ -20,5 +20,11 @@ public class Typechange2 {
 
         String str1 = "Hello";
         System.out.println(str1);
+
+        float value9 = 10f;
+        double resist1 = 49.56;
+        System.out.println(value9);
+        System.out.println(resist1);
+
     }
 }
