@@ -17,6 +17,10 @@ public class Practice {
         String User = "김동근";
         System.out.println(User);
 
+        a = 5;
+        b = 4;
+        System.out.println((double)a+b);
+        
 
     }
 }
