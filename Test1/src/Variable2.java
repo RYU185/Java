@@ -16,7 +16,7 @@ public class Variable2 {
         boolean j = true; // 1바이트
 
         System.out.println(c);
-        
+
         // 진법에 따른 다양한 표기법
         c = 15; // 10진법
         System.out.println(c);
@@ -25,13 +25,6 @@ public class Variable2 {
         c = 0xF; // 16진법
         System.out.println(c);
         // 숫자가 커지면 커질수록 16진법을 사용
-
-
-
-
-
-
-
 
     }
 }
