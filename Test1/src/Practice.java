@@ -20,7 +20,5 @@ public class Practice {
         a = 5;
         b = 4;
         System.out.println((double)a+b);
-
-    
     }
 }
