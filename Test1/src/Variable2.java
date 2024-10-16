@@ -20,7 +20,7 @@ public class Variable2 {
         // 진법에 따른 다양한 표기법
         c = 15; // 10진법
         System.out.println(c);
-        c = 0b1111; // 2진법
+        c = 0b1111; // 2진법asd
         System.out.println(c);
         c = 0xF; // 16진법
         System.out.println(c);
