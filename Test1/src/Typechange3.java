@@ -46,5 +46,20 @@ public class Typechange3 {
         System.out.println(value9); // 결과값 8 ( byte + short = int )
         System.out.println(value10); // 결과값 8.0 ( byte + short = int의 값을 double로 업캐스팅 )
 
+        boolean flag = true;
+
+        short data$;
+        char name;
+        int name3;
+        final int $MY_DATA;
+
+
+
+        System.out.println((int)5.6+3.5);
+        System.out.println((int)5.6+(int)3.5);
+        System.out.println((int)(5.6+3.5));
+        System.out.println(7/4);
+        System.out.println((double)3/2);
+        System.out.println((double)(3/2));
     }
 }

@@ -3,7 +3,7 @@ public class Typechange {
         // type을 변환시키는 행위 = casting
         int value1 = (int)5.3;
         System.out.println(value1);
-        // 소수를 표현하는 double이 정수를 표현하는 int로 변환되면 소수점 이하는 날려버림. 반올림이 아니다.
+        // 소수를 표현하는 double이 정수를 표현하는 int로 변환(down-casting)되면 소수점 이하는 날려버림. 반올림X.
         long value2 = (long)10;
         // == long value2 = 10L;
         float value3 = (float) 4.1;
