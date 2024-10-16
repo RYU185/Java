@@ -17,5 +17,6 @@ public class Practice {
         String User = "김동근";
         System.out.println(User);
 
+
     }
 }
