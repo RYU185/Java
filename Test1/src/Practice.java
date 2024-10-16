@@ -21,6 +21,6 @@ public class Practice {
         b = 4;
         System.out.println((double)a+b);
 
-
+    
     }
 }
