@@ -2,11 +2,16 @@ public class Typechange2 {
     public static void main(String[] args) {
         // 업캐스팅 (int 기준)
         float value1 = 3; // 정수를 실수로
+        System.out.println(value1); // 3.0
+
         long value2 = 5;
         double value3 = 7;
         // 다운캐스팅 (int 기준)
         byte value4 = 9;
         short value5 = 11;
+        System.out.println(value5);
+        System.out.println();
+
 
         // 다운캐스팅인데 에러가 발생하는 경우
         byte value6 = (byte)128;

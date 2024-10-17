@@ -26,6 +26,7 @@ public class ArithmeticOperator {
                   // value3 = value3 + 1;
         System.out.println(value4); // 때문에 value4가 3을 출력함
         System.out.println(value3); // 그 이후에 ++가 연산됨. 결과값 4.
+        System.out.println();
 
         int value5 =3;
         int value6 = ++value5; // ++가 앞에 왔으므로 증감연산자를 먼저 처리하라

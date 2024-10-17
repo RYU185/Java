@@ -32,7 +32,25 @@ public class Summary {
         float e = 'A';
         double f = 0.558;
 
+        System.out.println();
 
+        System.out.println(2+3/2);
+        System.out.println(10 % 3 +5/3);
+        System.out.println((4+5/2)%4);
+        System.out.println();
+
+        System.out.println(3<3);
+        System.out.println(5>=3);
+        System.out.println(5<=5);
+        System.out.println(5==5);
+        System.out.println(5!=5);
+        System.out.println();
+
+        System.out.println(false && true);
+        System.out.println((4<=4)|| (6<3));
+        System.out.println(false ^ (3 >=4));
+        System.out.println(!(3<=3));
+        
 
 
 
