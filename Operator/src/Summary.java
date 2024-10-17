@@ -26,7 +26,15 @@ public class Summary {
         System.out.println(5+value1+"홍길동"+value2);
         System.out.println();
 
-        double a= 3.6;
+        byte b = 2;
+        short c = 6;
+        int d = 3;
+        float e = 'A';
+        double f = 0.558;
+
+
+
+
 
 
 
