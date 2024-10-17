@@ -8,7 +8,7 @@ public class AssignmentOperator {
 
         int value2; // 변수의 선언부분
         value2 = 5; // 변수의 대입부분 assignment
-        System.out.println(value2 += 2); // 축약형 // value2 = value2 + 2
+        System.out.println(value2 += 2); // 축약형 : value2 = value2 + 2
         value2 = 5;
         System.out.println(value2 -= 2); // 축약형 : value2 = value2 - 2 // 3
         value2 = 5;
