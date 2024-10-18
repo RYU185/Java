@@ -57,6 +57,10 @@ public class Summary {
         System.out.println((g<h)? "안녕하세요":"반갑습니다");
         System.out.println((g<h)?(h<i)?"타입 A":"타입 B": (h<i)?"타입C":"타입D");
 
+        int x = 70;
+        System.out.println((x>=60)?"합격입니다":"탈락입니다");
+
+
 
 
 
