@@ -46,6 +46,7 @@ public class ArithmeticOperator {
         System.out.println(value8); // 5
         System.out.println(value9); // 10
 
+        double num = 3.5;
 
 
 
