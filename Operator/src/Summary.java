@@ -50,7 +50,12 @@ public class Summary {
         System.out.println((4<=4)|| (6<3));
         System.out.println(false ^ (3 >=4));
         System.out.println(!(3<=3));
-        
+
+        int g = 3;
+        int h = 5;
+        int i = 7;
+        System.out.println((g<h)? "안녕하세요":"반갑습니다");
+        System.out.println((g<h)?(h<i)?"타입 A":"타입 B": (h<i)?"타입C":"타입D");
 
 
 
