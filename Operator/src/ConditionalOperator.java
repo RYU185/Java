@@ -20,7 +20,7 @@ public class ConditionalOperator {
         int value3 = 3;
         System.out.println((value3%2==0)? "짝수":"홀수");
 
-        // if 조건문의 형태 (삼항연산자와 같아보이지만 전혀 다른 코드)
+        // if else 조건문의 형태 (삼항연산자와 같아보이지만 전혀 다른 코드)
         if (value3%2==0) {
             System.out.println("짝수");
         }else {

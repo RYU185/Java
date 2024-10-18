@@ -3,7 +3,7 @@ public class AssignmentOperator {
         // 대입연산자
         int value1 = 3;
         value1 = value1 + 3; // value1에 할당한 값에 3을 더한 값을 4ln의 value1에 덮어씌운다.
-        System.out.println(value1);
+        System.out.println(value1); // 6
         System.out.println();
 
         int value2; // 변수의 선언부분
