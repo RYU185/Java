@@ -20,6 +20,9 @@ public class ConditionalOperator {
         int value3 = 3;
         System.out.println((value3%2==0)? "짝수":"홀수");
 
+        int x = 40;
+        System.out.println((x>=60)? "안녕하세요":"반갑습니다");
+
         // if else 조건문의 형태 (삼항연산자와 같아보이지만 전혀 다른 코드)
         if (value3%2==0) {
             System.out.println("짝수");
