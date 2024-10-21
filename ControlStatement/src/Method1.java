@@ -43,7 +43,7 @@ public class Method1 {
         System.out.println("메서드의 return");
 
         checkOddEven(100);
-        System.out.println(checkOddEven2(100));
+        System.out.println(checkOddEven2(101));
     }
 
     // 새로운 메서드를 만들기 위해서는 class 바로 다음 뎁스에 존재해야한다
@@ -62,8 +62,9 @@ public class Method1 {
 
     public static String checkOddEven2(int number) {
         String str = (number % 2 == 0) ? "짝수" : "홀수";
-        return "Hi"; // return의 뜻: 돌려준다 > return 하는 데이터타입을 public static 뒤에 써줘야함 (String)
-
+        return str; // return의 뜻: 돌려준다 > return 하는 데이터타입을 public static 뒤에 써줘야함 (String)
+        //리턴값을 Hi로 내버려두면 변수가 무엇이든간에 결과는 Hi로 도출된다.
+        //올바른 값을 내려면 return str; 로 고쳐야함
     }
 
 
