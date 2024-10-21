@@ -40,8 +40,8 @@ public class Method1 {
         checkOddEven(10); // 매개변수를 소괄호안에 주고싶다면 아래(ln51)의 메서드 소괄호에도 매개변수(데이터타입)를 줘야한다.
         // 나는 1부터 100까지의 홀짝 구분을 원하는데 계속해서 메서드를 반복해줘봤자 똑같은 결과만 나올 뿐
         // ( ) 소괄호 안에 들어가는 인풋input = 매개변수
-
         System.out.println("메서드의 return");
+
         checkOddEven(100);
         System.out.println(checkOddEven2(100));
     }
@@ -56,8 +56,8 @@ public class Method1 {
         System.out.println(str);
             } // 중괄호가 여기서 끝났으므로 다시 checkOddEven(number)로 되돌아감 - 반복
     // 실수Error 주의
-    // ln35~ checkOddEven(int number = 5); >>>>> 매개변수는 메서드에 선언된 값만 입력하자.
-    // ln50 public static void checkOddEven(number) >>>>> 메서드의 선언/정의는 데이터타입이 있어야한다.
+    // checkOddEven(int number = 5); >>>>> 매개변수는 메서드에 선언된 값만 입력하자.
+    // public static void checkOddEven(number) >>>>> 메서드의 선언/정의는 데이터타입이 있어야한다.
 
 
     public static String checkOddEven2(int number) {
