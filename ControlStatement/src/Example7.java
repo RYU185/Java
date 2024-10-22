@@ -27,4 +27,11 @@ public class Example7 {
             return ("두 수는 같음");
         }
     }
+/*    // public static that getMax(int a, int b)
+            if (a>=b) {
+            return a;
+            else b {
+            return b;
+            }
+                */
 }

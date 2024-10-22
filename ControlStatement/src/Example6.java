@@ -4,7 +4,7 @@ public class Example6 {
         String str1 = "hello";
         String str2 = "hello";
         String str3 = "world";
-        System.out.println(str1.equals(str2));
+        System.out.println(str1.equals(str2)); // 참조자료형 String의 값으로서의 변수를 비교하기 위하
         System.out.println(str1.equals(str3));
 
         // 메서드 사용

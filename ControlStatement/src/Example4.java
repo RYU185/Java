@@ -9,6 +9,6 @@ public class Example4 {
         System.out.println(square(15)); // 225 출력
     }
     public static int square(int num) {
-        return num = (num*num);
+        return num*num;
     }
 }
