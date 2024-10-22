@@ -31,6 +31,7 @@ public class LogicalOperator {
         System.out.println();
 
         // 쇼트 서킷
+        // 자바의 읽기 순서에 따라 왼쪽에서 먼저 결과값이 확정되었을 때 그 뒤의 변수는 읽지않는다.
         int value1 = 3;
         System.out.println(false && ++value1>6); // true 였으면 쇼트 서킷이 발생하지 않고 뒤까지 읽음
         System.out.println(value1); // 3 쇼트서킷이 발생하여 ++value1이 실행되지 않은 채로 출력함
