@@ -13,7 +13,6 @@ public class Example5 {
                 //출력하고자 하는 데이터타입      //변수의 데이터타입
     public static String changeToUpperCase(String str) {
        return str.toUpperCase();
-
     }
 
 }
