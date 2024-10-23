@@ -10,12 +10,23 @@ public class Example13 {
         System.out.println(findCharCount('h','q')); // 10
         System.out.println(findCharCount('W','p')); // 20
     }
+
     public static int findCharCount(char x, char y) {
         int count = 0;
-        for (int i = x; i <= y; i++) {
-            if (i >= 91 && i <= 96) {
+        for (int i=x; i<=y; i++){
+            if (i>=91 && i<=96) {
                 continue;
-            } count= count + 1;
-        } return count;
+            } count = count + 1;
+        }return count;
+
+
+
+//    public static int findCharCount(char x, char y) {
+//        int count = 0;
+//        for (int i = x; i <= y; i++) {
+//            if (i >= 91 && i <= 96) {
+//                continue;
+//            } count= count + 1;
+//        } return count;
     }
 }

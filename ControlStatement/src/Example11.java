@@ -10,13 +10,24 @@ public class Example11 {
         System.out.println(countEvenNumbers(1,200)); // 99
     }
 
-
     public static int countEvenNumbers(int x, int y) {
         int count = 0;
-        for (int i = x; i < y; i++) {
-            if (i % 2 == 0) {
-                count = count + 1;
+        for (int i=x; i<y; i++) {
+            if (i % 2 == 0){
+                count = count +1;
             }
         } return count;
+
+
+
+
+
+//    public static int countEvenNumbers(int x, int y) {
+//        int count = 0;
+//        for (int i = x; i < y; i++) {
+//            if (i % 2 == 0) {
+//                count = count + 1;
+//            }
+//        } return count;
     }
 }

@@ -11,7 +11,24 @@ public class Example14 {
         System.out.println(findVowelCount('j','n')); // 0
     }
 
-    public static int findVowelCount(char x, char y){
+    public static int findVowelCount(char x, char y) {
+        int count = 0;
+        for (int i = x; i <= y; i++) {
+            if (i >= 91 && i <= 96) {
+                continue;
+            }
+            if (i == 'A' | i == 'E' | i == 'I' | i == 'O' | i == 'U' | i == 'a' | i == 'e' | i == 'i' | i == 'o' | i == 'u') {
+                count = count + 1;
+            }
+        } return count;
+    }
+}
+
+
+
+
+
+    /*public static int findVowelCount(char x, char y){
         int count = 0;
         for (int i=x; i<=y; i++) {
             if (i >= 91 && i <= 96) {
@@ -49,4 +66,4 @@ public class Example14 {
             }
         } return count;
     }
-}
+}*/

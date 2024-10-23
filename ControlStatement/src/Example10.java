@@ -11,10 +11,18 @@ public class Example10 {
     }
 
     public static int sumNumbers(int x, int y) {
+        int sum = 0;
+        for (int i=x; i<=y; i++) {
+            sum = sum + i;
+        } return sum;
+
+
+
+    /*public static int sumNumbers(int x, int y) {
         int sum = 0; // 맨 바닥 기초공사를 깔아주는 0. 저장소 설계.
         for (int i = x; i <= y; i++) {
             sum = sum + i; // sum = 0+1+2+3+4+...
         }
-        return sum;
+        return sum;*/
     }
 }

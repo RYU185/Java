@@ -11,12 +11,27 @@ public class Example12 {
     }
 
     public static String findNumber(int x, int y, int z) {
-        int num = 0;
-        for (int i = x; i <= y; i++) {
+        int number = 0;
+        for (int i=x; i<=y; i++){
             if (i == z) {
                 return z+"";
             }
         } return "없음";
+
+
+
+
+
+
+
+
+//    public static String findNumber(int x, int y, int z) {
+//        int num = 0;
+//        for (int i = x; i <= y; i++) {
+//            if (i == z) {
+//                return z+"";
+//            }
+//        } return "없음";
     }
 }
 
