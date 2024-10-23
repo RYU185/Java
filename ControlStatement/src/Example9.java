@@ -9,7 +9,8 @@ public class Example9 {
     public static int square() { // 메소드 만들기
         Scanner scanner = new Scanner(System.in); // 스캐너 시작 메모리 비워주기
         System.out.println("숫자를 입력해주세요: "); // 스캐너 제목 표시
-        int number = scanner.nextInt(); // 스캐너가 스캔하여 내보낼 데이터타입
+        int number = scanner.nextInt();// 스캐너가 스캔하여 내보낼 데이터타입
+        scanner.close();
         return number * number;
     }
 }
