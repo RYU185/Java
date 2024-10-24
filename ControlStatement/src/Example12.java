@@ -10,29 +10,31 @@ public class Example12 {
         System.out.println(findNumber(20, 50, 55)); // "없음"
     }
 
-    public static String findNumber(int x, int y, int z) {
-        int number = 0;
-        for (int i=x; i<=y; i++){
-            if (i == z) {
-                return z+"";
-            }
-        } return "없음";
-
-
-
-
-
-
-
-
 //    public static String findNumber(int x, int y, int z) {
-//        int num = 0;
+//        int number = 0;
 //        for (int i = x; i <= y; i++) {
 //            if (i == z) {
-//                return z+"";
+//                return z + "";
+//                // return Integer.toString(z);
 //            }
-//        } return "없음";
+//        }
+//        return "없음";
+
+    public static String findNumber(int x, int y, int z) {
+        boolean num = false;
+        for (int i = 0; i <= y; i++) {
+            if (i == z) {
+                num = true;
+                break;
+            }
+        }
+        if (num) {
+            return z + "";
+        } else {
+            return "없음";
+        }
     }
 }
+
 
 
