@@ -12,7 +12,7 @@ public class Example2 {
         System.out.println(getLength("Happy Birthday")); // 14
     }
 
-    public static int getLength(String str) { //변수선언
+    public static int getLength(String str) { // 변수선언
         return str.length(); // str에 .length라는 메서드 실행한 값을 return
 
     }

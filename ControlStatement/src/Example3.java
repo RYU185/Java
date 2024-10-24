@@ -16,7 +16,7 @@ public class Example3 {
         System.out.println(checkPositiveOrNegative(-5)); // 음수 출력
         System.out.println(checkPositiveOrNegative(0));  // 0 출력
     }
-    public static String checkPositiveOrNegative(int number) {
+        public static String checkPositiveOrNegative(int number) {
         if (number > 0) {
             return("양수");
         } else if (number < 0) {
