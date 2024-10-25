@@ -22,6 +22,7 @@ public class Array2D {
         array3[1][2] = 6;
         // 리터럴 방식으로 생성한다면?
         int[][] array4 = {{1, 2, 3} ,{4, 5, 6}};
+        System.out.println();
 
         // 2차원 배열 출력 (deepToString 메서드 사용)
         System.out.println(Arrays.deepToString(array3));
