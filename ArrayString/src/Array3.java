@@ -15,8 +15,8 @@ public class Array3 {
         int[] ints = {1,2,3};
         int[] temps = ints;
         temps[0] = 100;
-        System.out.println(Arrays.toString(ints));
-        System.out.println(Arrays.toString(temps));
+        System.out.println(Arrays.toString(ints));  // [100, 2, 3]
+        System.out.println(Arrays.toString(temps)); // [100, 2, 3]
 
     }
 }
