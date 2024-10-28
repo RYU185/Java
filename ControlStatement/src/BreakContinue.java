@@ -5,8 +5,10 @@ public class BreakContinue {
             if (i == 5) {
                 break;
             }
-            System.out.println(i); // 0, 1, 2, 3, 4까지 돌리고 break
+            System.out.print(i); // 0, 1, 2, 3, 4까지 돌리고 break
         }
+        System.out.println();
+
         // 이중For문의 break
         for (int i = 0; i < 3; i++) { // 3번 반복
             for (int j = 0; j < 5; j++) { // 5번 반복
@@ -29,6 +31,8 @@ public class BreakContinue {
                 System.out.println("i=" + i + ", j=" + j); // i = 0, j = 0
             }
         }
+
+
         // continue ( 얘 빼고는 다 실행 = 조건식 중 continue가 달린 조건은 건너뛰고 나머지는 모두 진행)
         for (int i = 0; i < 3; i++) { // 3번 반복
             for (int j = 0; j < 5; j++) { // 5번 반복
