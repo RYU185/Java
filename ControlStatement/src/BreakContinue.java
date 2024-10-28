@@ -30,16 +30,17 @@ public class BreakContinue {
                 }
                 System.out.println("i=" + i + ", j=" + j); // i = 0, j = 0
             }
+            System.out.println();
         }
 
 
         // continue ( 얘 빼고는 다 실행 = 조건식 중 continue가 달린 조건은 건너뛰고 나머지는 모두 진행)
         for (int i = 0; i < 3; i++) { // 3번 반복
-            for (int j = 0; j < 5; j++) { // 5번 반복
+            for (int j = 0; j < 4; j++) { // 5번 반복
                 if (j == 2) {
                     continue; // j == 2 인 경우만 제외한다.
                 }
-                System.out.println("i=" + i + ", j=" + j);
+                System.out.println(i + "," + j);
             }
         }
     }
