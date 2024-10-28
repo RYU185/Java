@@ -16,7 +16,7 @@ public class Example3 {
             }
         } if (count>0) { // 한개라도 찾았다는 뜻
             return count;
-        }else return -1;
+        } else return -1;
     }
 }
 
