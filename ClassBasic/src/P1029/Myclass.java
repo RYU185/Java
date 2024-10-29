@@ -1,5 +1,7 @@
 package P1029;
 
+import java.util.Date;
+
 public class Myclass {
     public static void main(String[] args) {
         Student steve = new Student("Steve", 25);
@@ -22,19 +24,22 @@ public class Myclass {
         System.out.println(Kim.password);
 
         Product book1 = new Product("A001","여행",10000,100);
-        System.out.println(book1.price + " " + book1.stock);
+        System.out.println(book1.price + ", " + book1.stock);
         book1.setPrice(11000);
         book1.setStock(90);
-        System.out.println(book1.price + " "+ book1.stock);
+        System.out.println(book1.price + ", "+ book1.stock);
+
+        // 주문 생성
+        Order order1 = new Order("1029-001", Kim, book1, new Date(), 3);
+        // user와 product 부분에서 new User, new Product 로 넣어도 됨. 단, 각 클래스에서 정의된 순서에 따라 작성
+        System.out.println(order1.user.username);
+        System.out.println(order1.product.name);
+        System.out.println(order1.orderDate);
 
     }
 }
 
 
-
-
-// 폴더 = 패키지
-// class
 
 
 
