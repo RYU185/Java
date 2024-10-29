@@ -10,12 +10,47 @@ public class Example4 {
         System.out.println(findColor(colors, "green")); // 3
         System.out.println(findColor(colors, "yellow")); // -1
     }
-    public static int findColor(String [] colors, String target) {
+
+    public static int findColor(String[] colors, String str) {
         for (int i = 0; i < colors.length; i++) {
-            if (colors[i] == target) {
+            if (str == colors[i]) {
                 return i;
             }
-        }
-        return -1;
+        }return -1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //    public static int findColor(String [] colors, String target) {
+//        for (int i = 0; i < colors.length; i++) {
+//            if (colors[i] == target) {
+//                return i;
+//            }
+//        }
+//        return -1;
+//    }
