@@ -5,8 +5,6 @@ public class Example3 {
         System.out.println(countNumber(numbers, 3)); // 3
         System.out.println(countNumber(numbers, 4)); // 2
         System.out.println(countNumber(numbers, 10)); // -1
-
-
     }
 
     public static int countNumber(int[] numbers, int num) {
