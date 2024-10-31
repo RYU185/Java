@@ -27,6 +27,7 @@ public class String2 {
         System.out.println(str4); // "false"
         System.out.println();
 
+
         String str5 = str3.concat(str4); //
         System.out.println(str5); // 2.3false
         String str6 = "안녕"+3; // 안녕3    >>> 자연스럽게 문자로 인식함 = 문자열 + int
