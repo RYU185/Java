@@ -11,6 +11,7 @@ public class String2 {
 
         // #2. 문자열 중 원하는 문자를 검색하고싶다 charAt(), indexOf)(), lastIndexOf()
         System.out.println(str1.charAt(1)); // e
+        System.out.println(str1.charAt(1));
         System.out.println(str2.charAt(1)); // 녕
         System.out.println();
         System.out.println(str1.indexOf('a')); // 7
