@@ -7,8 +7,8 @@ public class Example6 {
         System.out.println(getMax(numbers2)); // 99
     }
     public static int getMax(int[] num){
-        int max = num[0];
-        for (int i=1; i<num.length; i++){
+        int max = 0;
+        for (int i=0; i<num.length; i++){
             if (num[i]>max){
                 max = num[i];
             }
