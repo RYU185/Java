@@ -41,16 +41,19 @@ public class String2 {
         // 1byte안에 한글이 담기지 않기 때문에 음수로 보이게 됨 (데이터는 순환형이기때문에) - 한글은 UTF-16 이상이어야 함
         String str8="Hello Java!";
         String str9="안녕하세요";
+        String str10="Java Education";
         byte[] array1 = str8.getBytes();
         byte[] array2 = str9.getBytes();
+        byte[] array3 = str10.getBytes();
         System.out.println(Arrays.toString(array1)); // [72, 101, 108, 108, 111, 32, 74, 97, 118, 97, 33]
         System.out.println(Arrays.toString(array2)); // [-20, -107, -120, -21, -123, -107, -19, -107, -104, -20, -124, -72, -20, -102, -108]
+        System.out.println(Arrays.toString(array3)); // [74, 97, 118, 97, 32, 69, 100, 117, 99, 97, 116, 105, 111, 110]
 
             // toCharArray() ( char는 2byte이므로 문자가 담긴다 (한글 포함) )
-            char[] array3 = str8.toCharArray();
-            char[] array4 = str9.toCharArray();
-        System.out.println(Arrays.toString(array3)); // [H, e, l, l, o,  , J, a, v, a, !]
-        System.out.println(Arrays.toString(array4)); // [안, 녕, 하, 세, 요]
+            char[] array4 = str8.toCharArray();
+            char[] array5 = str9.toCharArray();
+        System.out.println(Arrays.toString(array4)); // [H, e, l, l, o,  , J, a, v, a, !]
+        System.out.println(Arrays.toString(array5)); // [안, 녕, 하, 세, 요]
 
 
 
