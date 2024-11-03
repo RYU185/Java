@@ -26,6 +26,7 @@ public class String2 {
         String str4 = String.valueOf(false); // boolean > String 변환
         System.out.println(2.3); // "2.3"
         System.out.println(str4); // "false"
+       
         System.out.println();
 
 
