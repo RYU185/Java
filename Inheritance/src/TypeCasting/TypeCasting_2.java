@@ -9,10 +9,10 @@ public class TypeCasting_2 {
     public static void main(String[] args) {
         C value1 = new C(); // 부모 클래스 C의 인스턴스
         C value2 = new D(); // 자식 클래스 D의 인스턴스를 부모인 C로 업캐스팅
-        System.out.println(value1 instanceof C); // value1이 원래 C 생성자로 만들어졌느냐? true
-        System.out.println(value2 instanceof C); // value2가 원래 C 생성자로 만들어졌느냐? true
-        System.out.println(value1 instanceof D); // value1이 원래 D 생성자로 만들어졌느냐? false
-        System.out.println(value2 instanceof D); // value2이 원래 D 생성자로 만들어졌느냐? true
+        System.out.println(value1 instanceof C); // value1이 원래 C 의 속성을 포함하느냐? true
+        System.out.println(value2 instanceof C); // value2가 원래 C 의 속성을 포함하느냐? true
+        System.out.println(value1 instanceof D); // value1이 원래 D 의 속성을 포함하느냐? false
+        System.out.println(value2 instanceof D); // value2이 원래 D 의 속성을 포함하느냐? true
 
         // instanceof
         // 뒤에 적는 클래스의 특징 또는 속성을 가지고 있는지 물어보는 문법요소
