@@ -22,7 +22,7 @@ public class Overriding_1 {
         B value2 = new B();
         value2.print(); // B 클래스10
 
-        A value3 = new B(); //
+        A value3 = new B(); // B에서 A를 바라본다
         value3.print(); // B 클래스10
         // A 클래스의 print()가 자식클래스의 print()로 오버라이딩되었기 때문
         // 교재 328페이지 필기 참고
