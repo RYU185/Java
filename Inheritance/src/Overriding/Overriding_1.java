@@ -13,10 +13,7 @@ class B extends A {
         System.out.println("B 클래스"+a);
 
     }
-
 }
-
-
 public class Overriding_1 {
     public static void main(String[] args) {
         A value1 = new A();
