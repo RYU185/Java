@@ -13,8 +13,8 @@ public class Student {
     // #2. 생성자 : 필드영역을 초기화하는 역할
     // 기본 생성자
     public Student() {
-//        =new Student ("Steve", 25, "Daejeon", "남")
-//        =new Student ("Steve", 25, "Daejeon", "남", 100, 100, 100);
+        //new Student ("Steve", 25, "Daejeon", "남")
+        //new Student ("Steve", 25, "Daejeon", "남", 100, 100, 100);
 
     }
 
