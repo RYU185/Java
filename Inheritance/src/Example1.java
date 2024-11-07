@@ -74,6 +74,12 @@ class Student {
         average = sum / scores.length;
         return average;
     }
+
+    @Override // 오버라이드? 아무런 상속도 없는데?
+              // 모든 클래스는 오브젝트의 자식클래스이다.
+    public String toString() {
+        return "아이디:"+studentId+" 이름:"+name+" "+grade+"학년";
+    } //클래스를 만들고 toString 활용하는것을 적극 권장한다
 }
 
 
@@ -101,5 +107,8 @@ public class Example1 {
         System.out.println(Arrays.toString(s2.getScores()));
         // 평균
         System.out.println(s2.calAverage());
+
+        // toString
+        System.out.println(s2.toString());
 }
 }
