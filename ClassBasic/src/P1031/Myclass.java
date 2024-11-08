@@ -1,7 +1,7 @@
 package P1031;  // 패키지 정의 부분 ( 인텔리제이가 자동으로 부여 )
 
 
-// #1. 다른 패키지에 있는 외부클래스르르 사용하려면 import를 해야만 함
+// #1. 다른 패키지에 있는 외부클래스를 사용하려면 import를 해야만 함
 //import java.util.Arrays;
 
 // Myclass.java 파일내의 유일한 public 클래스
