@@ -33,12 +33,12 @@ public class TypeCasting_1 {
 
         // 3. B -> A 업캐스팅
         A value3 = new B();
-        System.out.println(value3.a);
-        value3.methodA();
+        System.out.println(value3.a); // 3
+        value3.methodA(); // A 클래스
 
-        B value4 = (B)value3;
-        System.out.println(value4.b);
-        value4.methodB();
+        B value4 = (B)value3; // 다시 원래(B)타입으로 돌아오는 다운캐스팅
+        System.out.println(value4.b);  // 4
+        value4.methodB(); // B 클래스
 
         // 왜 업캐스팅과 다운캐스팅을 하는가?
         // 우리는 B에서 상속받은 A의 데이터와 본래 B의 데이터를 읽을 수 있다
