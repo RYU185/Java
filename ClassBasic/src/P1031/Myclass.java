@@ -2,14 +2,14 @@ package P1031;  // 패키지 정의 부분 ( 인텔리제이가 자동으로 부
 
 
 // #1. 다른 패키지에 있는 외부클래스를 사용하려면 import를 해야만 함
-//import java.util.Arrays;
+import java.util.Arrays;
 
 // Myclass.java 파일내의 유일한 public 클래스
 // 반드시 파일명과 클래스 이름이 동일해야함
 public class Myclass {
     public static void main(String[] args) {
         String[] str = {"Hello", "World"};
-        //System.out.println(Arrays.toString(str));
+        System.out.println(Arrays.toString(str));
 
         // #2. import 없이 풀네임으로 사용할 수도 있음
         System.out.println(java.util.Arrays.toString(str));
