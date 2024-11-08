@@ -33,6 +33,10 @@ public class Example2 {
     }
 }
 
+
+
+
+
 class Album {
     private String title;
     private int releaseYear;
