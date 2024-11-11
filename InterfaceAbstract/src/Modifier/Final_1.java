@@ -13,7 +13,7 @@ class A2 {
     A2() { a=3; b=5;}   // final은 초기화를 하지 않으면 에러
 }
 
-class A3 {
+class   A3 {
     int a = 3;
     final int b = 5;
 
