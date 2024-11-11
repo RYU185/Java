@@ -2,7 +2,7 @@ package Modifier;
 
 class A1{
     int a = 3;
-    final  int b = 5;   // final을 필드에 적용가능. 선언과 동시에 초기화
+    final int b = 5;   // final을 필드에 적용가능. 선언과 동시에 초기화
     A1(){}
 
 }
