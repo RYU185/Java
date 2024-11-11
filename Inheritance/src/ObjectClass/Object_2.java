@@ -8,6 +8,8 @@ class A{
 class B {
     int a = 3;
     int b = 4;
+
+    // 오브젝트 (Object가 클래스 B의 부모격이므로 오버라이드되서 B 클래스의 리턴값을 출력한다)
     @Override
     public String toString (){
         return "필드값(a,b) = "+a+", "+b;

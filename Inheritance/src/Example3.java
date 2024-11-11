@@ -15,7 +15,6 @@ public class Example3 {
         // System.out.println(a2.getTracks().size());  // 위 두 줄의 간략화
         System.out.println(temp);          // List는 Array로 바로 출력가능
         //System.out.println(a2.getTracks());  윗 줄과 동일
-
         // 직접 호출하면 뒤에 해쉬코드가 붙어서 출력됨
 
         a2.removeTracks("BBB");
