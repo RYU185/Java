@@ -1,14 +1,14 @@
 package Inheritance_1;
 // 상속
 class Human {
-    //필드
+    // 필드
     String name;
     int age;
     void eat(){};
     void sleep(){};
-
 }
 
+    // 생성자
 class Student extends Human{
     int studentID;
     void goToSchool(){}
@@ -17,6 +17,8 @@ class Worker extends Human{
     int workerID;
     void goToWork(){}
 }
+
+
 public class Inheritance_1 {
     public static void main(String[] args) {
         // 1. Human 객체생성
