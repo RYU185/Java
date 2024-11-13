@@ -9,7 +9,7 @@ abstract class Animal {
     // Abstract methods cannot have a body
     // 추상 메서드는 본체(body)가 없다 ( = 중괄호{} 사용불가 )
     // 추상은 즉 미완성이라는 의미로 중괄호 없이 세미콜론; 으로 종결
-    // 미완성이므로 반드시 cry 메서드를 오버라이드 해야한다는 강제성을 부여함 
+    // 미완성이므로 반드시 cry 메서드를 오버라이드 해야한다는 강제성을 부여함
 }
 
 class Cat extends Animal {
