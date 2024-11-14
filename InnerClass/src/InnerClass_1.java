@@ -1,4 +1,5 @@
-// Outer class 아우터 클래스 (외부 클래스)
+// Outer class 아우터 클래스 (외부 클래스) 2024/11/14
+
 class A1 {
     public int a= 3;
     protected int b = 4;
