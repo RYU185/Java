@@ -43,6 +43,8 @@ abstract class Shape implements Calculatable, Colorable {
     @Override
     public String getColor() {
         return color;
+
+
     }
 }
 
@@ -82,7 +84,7 @@ class Circle extends Shape implements Resizable {
 
     @Override
     public void resize (double factor) {
-        System.out.println(radius*2);
+       radius = radius * factor;
     }
 
     @Override
