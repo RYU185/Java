@@ -9,8 +9,6 @@ class C2 extends C1 {
 }
 
 // 인스턴스 필드의 오버라이딩 여부 확인
-
-
 public class InstanceField {
     public static void main(String[] args) {
         C1 value1 = new C1();
