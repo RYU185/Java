@@ -22,7 +22,7 @@ class Worker extends Human{
 public class Inheritance_1 {
     public static void main(String[] args) {
         // 1. Human 객체생성
-        Human h = new Human();
+        Human h = new Human();  // 인스턴스 생성
         h.name = "Steve";
         h.age = 21;
         h.eat();
