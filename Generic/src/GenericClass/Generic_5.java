@@ -3,6 +3,7 @@ package GenericClass;
 // 제네릭타입이 2개 이상인 경우 ( 갯수 제한이 없음 )
 
 import javax.xml.crypto.dsig.keyinfo.KeyValue;
+import java.security.Key;
 
 class KeyValue1 <K,V> {
     private K key;
@@ -49,5 +50,16 @@ public class Generic_5 {
         int key2 = kv2.getKey();
         String value2 = kv2.getValue();
 
+        // key만 저장하고 value자리에는 아무값도 저장하고 싶지않을때
+        // Void는 빈 자리로 내버려두겠다는 뜻
+        KeyValue1<String, Void> kv3 = new KeyValue1<>();  // Void : null이라는 뜻 (비어있다)
+        kv3.setKey("key값만 사용");
+        String key3 = kv3.getKey();
+        System.out.println(key3);
+        // setValue
+        // kv3.setValue(1); // 에러발생 Void타입 대신 Integer를 입력했기 때문.
+        // kv3.setValue("Hello"); // 에러발생 Void타입 대신 String을 입력했기 때문.
+        kv3.setValue(null); // 유일하게 Void자리에 입력이 가능한 값 null
+        System.out.println(kv3.getValue());
     }
 }
