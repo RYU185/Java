@@ -6,11 +6,12 @@ import javax.xml.crypto.dsig.keyinfo.KeyValue;
 import java.security.Key;
 
 class KeyValue1 <K,V> {
-    private K key;
-    private V value;
+    private K key; // 값의 의미
+    private V value; // 값
     // 주로 2개는 K, V를 사용함
     // Key & Value
     // 객체 생성 시점에 데이터타입을 두개 지정해줘야 함
+    // Key와 Value의 관계성을 가져야함
 
 
     public K getKey() {
