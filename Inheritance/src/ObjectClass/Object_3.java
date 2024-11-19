@@ -10,9 +10,9 @@ class C {
         this.name = name;
     }
 }
-    class D {
-        String name;
-        D (){}
+class D {
+    String name;
+    D (){}
         D (String name) {
             this.name = name;
         }
