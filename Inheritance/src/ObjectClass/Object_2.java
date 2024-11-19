@@ -14,10 +14,7 @@ class B {
     public String toString (){
         return "필드값(a,b) = "+a+", "+b;
     }
-
 }
-
-
 
 public class Object_2 {
     public static void main(String[] args) {
