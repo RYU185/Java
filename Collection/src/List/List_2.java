@@ -14,7 +14,7 @@ public class List_2 {
         // 실제 size가 아님!!!!
         System.out.println(alist2.size()); // 0
 
-        // #2. 배열을 List로 전환하는 방법
+        // #2. 배열을 List로 전환하는 방법.
         // Arrays
         Integer[] array = {1,2,3,4}; // 정수의 배열
         // Arrays 클래스의 asList 메서드를 사용하여 배열을 List 로 바꿀 수 있음
