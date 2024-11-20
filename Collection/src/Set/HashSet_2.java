@@ -1,6 +1,9 @@
 package Set;
 
+import java.sql.SQLOutput;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 // A클래스는 equals와 hashcode를 오버라이드하지 않음
 class A {
@@ -73,14 +76,50 @@ class D {
 
 public class HashSet_2 {
     public static void main(String[] args) {
+        // #1. A클래스
+        Set<A> hset1 = new HashSet<>();
         A a1 = new A(3);
         A a2 = new A(3);
-        System.out.println(a1.hashCode());
-        System.out.println(a2.hashCode());
+        System.out.println(a1 == a2); // false
+        System.out.println(a1.equals(a2)); // false
+        System.out.println(a1.hashCode()); // 793589513
+        System.out.println(a2.hashCode()); // 1313922862
+        // 오버라이드 하지않았기 때문에 모두 이상한 값을 출력한다
+        hset1.add(a1);
+        hset1.add(a2);
+        System.out.println(hset1.size()); // 2
+        // 2개의 인스턴스 객체(a1, a2)의 equals는 false, hashcode는 다르므로 중복이 아니다.
+        // 우리가 알고싶은 것: 어떤 조건에서 서로 다른 값이 되는지, 같은 값이 되는지 (중복인지 아닌지)
+        System.out.println();
+
+        // #2. B클래스 equals만 오버라이드
+        Set<B> hset2 = new HashSet<>();
+        B b1 = new B(3);
+        B b2 = new B(3);
+        System.out.println(b1 == b2); // false
+        System.out.println(b1.equals(b2)); // true
+        System.out.println(b1.hashCode()); // 1922154895
+        System.out.println(b2.hashCode()); // 883049899
+        hset2.add(b1);
+        hset2.add(b2);
+        // equals는 true였지만 hashcode가 다르기때문에 중복이 아니다
+        System.out.println(hset2.size()); // 2
+        System.out.println();
+
+        // #3. C클래스 equal와 hashcode 오버라이드
+        Set<C> hset3 = new HashSet<>();
         C c1 = new C(3);
         C c2 = new C(3);
-        System.out.println(c1.hashCode());
-        System.out.println(c2.hashCode());
+        System.out.println(c1 == c2); // false
+        System.out.println(c1.equals(c2)); // true
+        System.out.println(c1.hashCode()); // 34
+        System.out.println(c2.hashCode()); // 34
+        hset3.add(c1);
+        hset3.add(c2);
+        System.out.println(hset3.size()); // 1
+        // hashcode와 equals가 둘 다 동일하다고 판단하여 중복객체로 판단
+        System.out.println();
+
         D d1 = new D(5,6);
         D d2 = new D(5,6);
         System.out.println(d1.hashCode());
