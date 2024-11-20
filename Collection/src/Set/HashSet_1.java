@@ -1,8 +1,7 @@
 package Set;
 
 // 11/20 Set
-import java.sql.Array;
-import java.sql.SQLOutput;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
