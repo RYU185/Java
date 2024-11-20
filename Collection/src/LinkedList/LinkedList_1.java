@@ -5,7 +5,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 
-// List인터페이스의 두번째 구현클래스 Vector 사용법
+// List인터페이스의 세번째 구현클래스 LinkedList 사용법
+// 각 요소를 노드(=node) 라는 데이터 구조에 저장함
+// 각 노드는 데이터와 다음 노드에 대한 참조를 저장함
+// 주요특징
+// 1. 동적크기 : 필요할 때마다 노드를 연속된 위치가 아니더라도 추가 가능.
+//              리스트를 재생성할 필요가 없음
+// 2. 빠른 삽입/삭제: 리스트 중간에서도 참조값만 수정하여 삽입/삭제 가능
+// 3. 느린 접근(액세스): 임의의 위치에 접근하려면 반드시 처음부터 순차적으로 탐색해야함
+// 4. 메모리 오버헤드: 각 노드에 메모리 참조값을 저장하기 위한 추가 메모리 필요.
 
 public class LinkedList_1 {
     public static void main(String[] args) {
