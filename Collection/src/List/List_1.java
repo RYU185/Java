@@ -1,11 +1,10 @@
 package List;
 
-import java.sql.Array;
-import java.sql.SQLOutput;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Vector;
+
 
 // 배열과 리스트의 비교
 public class List_1 {

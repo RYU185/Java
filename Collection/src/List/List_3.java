@@ -34,7 +34,7 @@ public class List_3 {
         aList3.addAll(1,aList3);
         System.out.println(aList3); // [1, 1, 2, 2]
 
-        // #5. set( 수정)
+        // #5. set(수정)
         aList3.set(1,5);
         aList3.set(3,6);
         System.out.println(aList3); // [1, 5, 2, 6]
