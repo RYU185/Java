@@ -67,7 +67,7 @@ public class Vector_1 {
             System.out.println(vector3.get(i));
         }
         // #12. toArray 리스트를 배열로 만듦
-        // toArray는 오브젝트의 배열을 리턴하므로 오브젝트의 배열 타입으 ㅏㅂㄷ야암
+        // toArray는 오브젝트의 배열을 리턴하므로 오브젝트의 배열 타입으로 받아야함
         Object[] objects = vector3.toArray();
         System.out.println(Arrays.toString(objects));
 

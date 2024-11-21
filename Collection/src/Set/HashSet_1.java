@@ -61,6 +61,5 @@ public class HashSet_1 {
         String[] strings = hset3.toArray(new String[0]);
         System.out.println(Arrays.toString(strings)); // [A, B, C]
 
-
     }
 }

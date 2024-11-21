@@ -12,9 +12,8 @@ public class HashMap_1 {
         //#1. put (K key, V value) ( = add )
         hMap1.put(2, "나다라");
         hMap1.put(1, "가나다");
-        hMap1.put(3, "다라마");
-        hMap1.put(3 ,"ABC");
-
+        hMap1.put(3, "ABC");
+        hMap1.put(3 ,"다라마");
         // Key 는 중복허용X, values는 중복허용
         // value는 나중에 쓰는 값으로 덮어씀
         System.out.println(hMap1.toString()); //{1=가나다, 2=나다라, 3=다라마}

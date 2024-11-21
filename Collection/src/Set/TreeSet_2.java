@@ -19,7 +19,7 @@ class MyComparableClass implements Comparable<MyComparableClass>{
         this.data2=data2;
     }
     @Override
-    public int compareTo(MyComparableClass o) { //크기비교의 기준을 여기서 설정 (음수, 0, 양수)
+    public int compareTo(MyComparableClass o) { // 크기비교의 기준을 여기서 설정 (음수, 0, 양수)
         if(this.data1<o.data1) return -1;
         else if(this.data1 == o.data1) return 0;
         else return 1;

@@ -1,6 +1,5 @@
 package Set;
 
-import java.sql.SQLOutput;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -122,7 +121,7 @@ public class HashSet_2 {
 
         D d1 = new D(5,6);
         D d2 = new D(5,6);
-        System.out.println(d1.hashCode());
-        System.out.println(d2.hashCode());
+        System.out.println(d1.hashCode()); // 1122
+        System.out.println(d2.hashCode()); // 1122
     }
 }
