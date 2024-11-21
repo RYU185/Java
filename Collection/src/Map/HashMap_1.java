@@ -1,6 +1,7 @@
 package Map;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -79,5 +80,35 @@ public class HashMap_1 {
         //#13. clear()
         hMap2.clear();
         System.out.println(hMap2.toString()); //{}
+
+        // HashMap에서 반복문을 사용하는 패턴
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "Apple");
+        map.put(2, "Banana");
+        map.put(3, "Cherry");
+        // 패턴1) keySet()을 이용하는 방법
+        for ( Integer k : map.keySet()){  // For-Each문이라고 부르기도 함
+            String value = map.get(k);
+            System.out.println(k+" = "+ value);
+        }
+
+        // 패턴2) entrySet()을 이용하는 방법
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            Integer key = entry.getKey();
+            String value = entry.getValue();
+            System.out.println(key+ " = " + value);
+        }
+
+        // 패턴3) Iterator<Map.Entry>를 이용하는 방법
+        Iterator<Map.Entry<Integer, String>> iterator =
+                map.entrySet().iterator();
+        while(iterator.hasNext()) {
+            Map.Entry<Integer, String> entry = iterator.next();
+            System.out.println(entry.getKey() + " = " +
+                    entry.getValue());
+        }
     }
 }
+
+
+
