@@ -13,7 +13,7 @@ public class Example4 {
 
     public static int findColor(String[] colors, String str) {
         for (int i = 0; i < colors.length; i++) {
-            if (str == colors[i]) {
+            if (str.equals(colors[i])) {
                 return i;
             }
         }return -1;

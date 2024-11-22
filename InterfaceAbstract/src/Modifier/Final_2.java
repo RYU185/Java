@@ -4,7 +4,6 @@ package Modifier;
 class A {
     void abc(){}
     final void bcd (){}  // 오버라이드 불가능
-
 }
 
 class B1 extends A{
