@@ -21,7 +21,6 @@ class A1 {
     }
 }
 
-
 public class InnerClass_1 {
     public static void main(String[] args) {
         // 1. 아우터클래스의 객체생성
