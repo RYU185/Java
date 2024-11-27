@@ -48,7 +48,7 @@ select 이름,
 	timestampdiff(year,생일,now()) as 만나이, 
 	입사일, 
 	timestampdiff(day,입사일,now()) as 입사일수,
-	adddate(입사일, 500) as 입사 500일후
+	adddate(입사일, 500) as 입사500일후
 from 사원;
 
 
@@ -56,9 +56,10 @@ from 사원;
 
 /*7. 주문테이블에서 요청일보다 발송일이 7일 이상 늦은 주문내역 */
 select *,
-		datediff(발송일, 요청일) as 지연일수 
+		datediff(발송일, 요청일) as 지연일수
 from 주문
-where 발송일>요청일;
+where 지연일수>=7
+
 
 /*8. 고객테이블에서 아래와 같은 컬럼을 만드시오. 단, 도시구분과 마일리지구분
 컬럼의 조건은 아래 조건을 따르시오
