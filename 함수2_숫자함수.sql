@@ -28,5 +28,7 @@ select sqrt(16); -- 4
 select rand(); -- 0과 1사이의 랜덤 넘버
 select rand(100); -- 결과값 항상 동일
 select rand(200); 
+
+
  
 	

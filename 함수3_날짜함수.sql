@@ -30,6 +30,19 @@ select adddate(now(),interval 50 month);
 select adddate(now(),interval 50 day);
 select adddate(now(),interval 50 hour); 
 
+-- last_day 그 달의 마지막 날
+-- dayofyear 현재년도에서 며칠이 지났는지 반환
+select last_day(now());
+select last_day('2025-02-01'); -- 2025-02-28
+select dayofyear(now()); -- 332 (2024-11-27기준)
+select dayofmonth(now()); -- 27 (2024-11-27기준)
+
+-- monthname 월을 영문으로 반환
+select monthname(now()); -- November
+
+-- weekday 요일을 반환: MySQL의 경우 월요일 0 ~ 일요일 6
+select weekday(now()); -- 2 (수요일)
+
 
 
 
