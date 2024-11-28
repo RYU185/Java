@@ -18,6 +18,5 @@ public class InstanceField {
         System.out.println(value2.m);  // 4
         System.out.println(value3.m);  // 3
         // 인스턴스 필드는 각자 따로 존재하기 때문에 오버라이딩 되지않는다.
-
     }
 }

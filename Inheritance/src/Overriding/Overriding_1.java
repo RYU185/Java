@@ -30,6 +30,5 @@ public class Overriding_1 {
         System.out.println(value3.a); // 5
         B value4 = (B)value3; // 다운캐스팅
         System.out.println(value4.a); // 10
-
     }
 }
