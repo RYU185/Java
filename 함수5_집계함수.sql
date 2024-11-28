@@ -65,8 +65,16 @@ from 제품
 where 제품명 like '%아이스크림%'
 group by 제품명;
 
--- rollup
+-- with rollup 그룹별 소계와 전체 총계를 표시
+select 도시, count(*) as 고객수, avg(마일리지) as 평균마일리지
+from 고객
+group by 도시
+with rollup;
 
+select 담당자직위, 도시, count(*) as 고객수
+from 고객
+group by 담당자직위, 도시
+with rollup;
 
 
 
