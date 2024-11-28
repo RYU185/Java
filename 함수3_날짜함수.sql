@@ -17,7 +17,7 @@ select datediff('2024-12-25', now()); -- 28
 select abs(datediff(now(), '2024-12-25')); 
 select timestampdiff(year, now(),'2025-12-25');
 select timestampdiff(month, now(),'2025-12-25');
-select timestampdiff(day, now(),'2025-12-25');
+select timestampdiff(day, now(),'2025-12-25'); -- select timestampdiff(시간, 과거, 미래)
 
 -- adddate 특정날짜에 기간을 더하다
 -- subdate 특정날짜에 기간을 빼다
