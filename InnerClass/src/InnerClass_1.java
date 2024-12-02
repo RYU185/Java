@@ -4,7 +4,7 @@ class A1 {
     public int a= 3;
     protected int b = 4;
     int c = 5;
-    private  int d = 6;
+    private int d = 6;
     void abc (){
         System.out.println("A클래스 abc()");
     }
