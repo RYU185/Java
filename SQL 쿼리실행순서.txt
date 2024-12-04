@@ -1,0 +1,21 @@
+<MySQL의 쿼리 실행 순서>
+1. from 어느테이블에서 정보를 가져올지 결정
+2. where 어떤 정보를 가져올지 결정(조건)
+3. group by 그룹화
+4. having 그룹에 조건을 적용
+5. select 원하는 컬럼(열)을 추출, 생성 - 별칭 생성
+6. order by 정렬
+7. limit 개수 정렬
+
+** MySQL은 
+- having구문에 별칭 사용 가능(v4.1~)
+- group by구문에 별칭 사용 가능(v8~)
+
+** 표준 SQL은 group by, having에서 별칭 사용 불가
+
+<서브쿼리의 경우에는 where절에서도 별칭 사용 가능>
+select *
+from (
+    select datediff(발송일, 요청일) as 지연일수
+    from 주문)
+where 지연일수 >= 7; 
