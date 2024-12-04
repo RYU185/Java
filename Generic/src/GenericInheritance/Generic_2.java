@@ -16,6 +16,5 @@ public class Generic_2 {
         Child4 c = new Child4();
         c.<Double>print(5.8);
         c.print(5.8);
-
     }
 }
