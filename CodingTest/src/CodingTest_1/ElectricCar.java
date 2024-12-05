@@ -1,7 +1,7 @@
 package CodingTest_1;
 
 class ElectricCar extends Car {
-    int batteryCapacity;
+    private int batteryCapacity;
 
     public ElectricCar(String modelName, int maxSpeed, int seatingCapacity, int batteryCapacity) {
         super(modelName, maxSpeed, seatingCapacity);

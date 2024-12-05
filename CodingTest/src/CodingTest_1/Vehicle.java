@@ -1,6 +1,6 @@
 package CodingTest_1;
 
-abstract class Vehicle {
+abstract public class Vehicle {
     String modelName;
     int maxSpeed;
 
