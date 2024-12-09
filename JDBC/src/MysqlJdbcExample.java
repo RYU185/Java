@@ -3,8 +3,8 @@ import java.sql.*;
 import java.util.*;
 import java.util.concurrent.DelayQueue;
 
-// 데이터베이스를 자바로 가져오는 과정
 
+// 데이터베이스를 자바로
 public class MysqlJdbcExample {
     // #1. 데이터베이스 커넥션 정보
     private static final String URL = "jdbc:mysql://localhost:3306/testdb";
@@ -119,7 +119,8 @@ public class MysqlJdbcExample {
     // #5. 주문기록이 없는 고객의 고객번호와 고객회사명 조회
     public void getCustomersNotOrder(){
         String query = "select 고객.고객번호, 고객회사명 from 고객 "
-                +"left join 주문 on 주문.고객번호 = 고객.고객번호";
+                +"left join 주문 on 주문.고객번호 = 고객.고객번호 "
+                +"where 고객.고객번호 not in(select 고객번호 from 주문)";
 
         List<Map<String,Object>> notOrderCustomers = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection( // 데이터베이스에 연결
@@ -136,13 +137,30 @@ public class MysqlJdbcExample {
             for(Map<String,Object> notOrderCustomer : notOrderCustomers){
                 System.out.println(notOrderCustomer);
             }
-
         }catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
+    public void getCustomersNotOrder_2() {
+        String query = "select 고객.고객번호, 고객회사명 from 고객 "
+                + "left join 주문 on 주문.고객번호 = 고객.고객번호 "
+                + "where 고객.고객번호 not in(select 고객번호 from 주문)";
 
+        try (Connection connection = DriverManager.getConnection( // 데이터베이스에 연결
+                URL, USER, PASSWORD);
+             Statement statement = connection.createStatement();  // 값을 얻어옴
+             ResultSet resultSet = statement.executeQuery(query)){
+
+            while (resultSet.next()){
+                String num = resultSet.getString("고객번호");
+                String compName= resultSet.getString("고객회사명");
+                System.out.println(num + " " + compName);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
         public static void main (String[] args){
             MysqlJdbcExample repository = new MysqlJdbcExample();
             // List<Customer> customers = repository.getAllCustomer();
@@ -154,7 +172,9 @@ public class MysqlJdbcExample {
 //            repository.getEmployees_1();
 //            System.out.println();
 //            repository.getEmployees_2();
+
             repository.getCustomersNotOrder();
+            repository.getCustomersNotOrder_2();
         }
     }
 
