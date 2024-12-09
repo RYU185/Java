@@ -1,38 +1,32 @@
 public class MileGrade {
-    String gradeName;
-    String gradeLower;
-    String gradeHigher;
+    int gradeName;
+    int gradeLower;
+    int gradeHigher;
 
     public MileGrade() {
     }
 
-    public MileGrade(String gradeName, String gradeLower, String gradeHigher) {
-        this.gradeName = gradeName;
-        this.gradeLower = gradeLower;
-        this.gradeHigher = gradeHigher;
-    }
-
-    public String getGradeName() {
+    public int getGradeName() {
         return gradeName;
     }
 
-    public void setGradeName(String gradeName) {
+    public void setGradeName(int gradeName) {
         this.gradeName = gradeName;
     }
 
-    public String getGradeLower() {
+    public int getGradeLower() {
         return gradeLower;
     }
 
-    public void setGradeLower(String gradeLower) {
+    public void setGradeLower(int gradeLower) {
         this.gradeLower = gradeLower;
     }
 
-    public String getGradeHigher() {
+    public int getGradeHigher() {
         return gradeHigher;
     }
 
-    public void setGradeHigher(String gradeHigher) {
+    public void setGradeHigher(int gradeHigher) {
         this.gradeHigher = gradeHigher;
     }
 

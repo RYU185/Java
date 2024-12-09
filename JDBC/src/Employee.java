@@ -1,11 +1,13 @@
+import java.time.LocalDate;
+
 public class Employee {
     String employeeNumber;
     String employeeID;
     String englishName;
     String employeePosition;
     String gender;
-    String birthday;
-    String joinDate;
+    LocalDate birthday;
+    LocalDate joinDate;
     String employeeAddress;
     String city;
     String region;
@@ -16,7 +18,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String employeeNumber, String employeeName, String englishName, String employeePosition, String gender, String birthday, String joinDate, String employeeAddress, String city, String region, String homecall, String superiorNumber, String departmentNumber) {
+    public Employee(String employeeNumber, String employeeName, String englishName, String employeePosition, String gender, LocalDate birthday, LocalDate joinDate, String employeeAddress, String city, String region, String homecall, String superiorNumber, String departmentNumber) {
         this.employeeNumber = employeeNumber;
         this.employeeID = employeeName;
         this.englishName = englishName;
@@ -72,19 +74,19 @@ public class Employee {
         this.gender = gender;
     }
 
-    public String getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 
-    public String getJoinDate() {
+    public LocalDate getJoinDate() {
         return joinDate;
     }
 
-    public void setJoinDate(String joinDate) {
+    public void setJoinDate(LocalDate joinDate) {
         this.joinDate = joinDate;
     }
 
