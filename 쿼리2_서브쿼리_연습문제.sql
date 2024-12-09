@@ -128,13 +128,16 @@ where 단가 = (select max(단가) from 제품);
 with 총주문수량 as 
 	(select 제품번호
 	from 제품
-	where 단가 =(select max(단가) from 제품)
-select 총주문수량.제품번호,
+	where 단가 =(select max(단가) from 제품))
+select 주문세부.제품번호,
 		sum(주문세부.주문수량) as 주문수량합 
-from 총주문수량 
-join 주문세부 on 총주문수량.제품번호 = 주문세부.제품번호
-group by 총주문수량.제품번호;
--- 왜 오류인지 모르겠습니다...
+from 주문세부 
+join 총주문수량 on 총주문수량.제품번호 = 주문세부.제품번호
+group by 주문세부.제품번호;
+
+
+
+
 
 -- 9. '아이스크림' 제품의 주문수량합
 select 제품명, (select sum(주문수량)

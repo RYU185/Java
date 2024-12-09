@@ -26,7 +26,7 @@ select adddate(now(),-50); -- =subdate와 같은 의미
 
 -- adddate/subdate에 interval를 함께 사용하면 더하거나 빼는 기간을 정할 수 있음
 select adddate(now(),interval 50 year);
-select adddate(now(),interval -3 month);
+select adddate(now(),interval 50 month);
 select adddate(now(),interval 50 day);
 select adddate(now(),interval 50 hour); 
 
