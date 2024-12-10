@@ -75,7 +75,8 @@ public class MysqlJdbcExample_4 {
     public void getNumOfOrdersByCity(String city) {
         String query = "select count(*) from 주문 " +
                 "join 고객 on 주문.고객번호 = 고객.고객번호 " +
-                "";
+                "where " +
+                "group by 도시";
 
     }
 
