@@ -50,6 +50,9 @@ select 이름,
 	adddate(입사일, 500) as 입사500일후
 from 사원;
 
+select 사원.사원번호, 이름, 직위
+from 사원 join 주문 on 주문.사원번호 = 사원.사원번호 
+where 주문일 <= '2022-01-01'	and 주문일 >= adddate('2022-01-01', interval -3 month) 
 
 /*7. 주문테이블에서 요청일보다 발송일이 7일 이상 늦은 주문내역 */
 select *,
