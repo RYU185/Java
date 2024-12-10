@@ -12,14 +12,20 @@ public class MysqlJdbcExample_4 {
     private static final String PASSWORD = "root";
 
     public void getProductsWithStock(int stock) {
-        String query = "select 제품.제품번호, 제품명, count(주문수량) as 총주문건수 " +
-                "from 제품 join 주문세부 on 제품.제품번호 = 주문세부.제품번호 " +
-                "where ? < 재고";
+        String query = "select 제품.제품번호, 제품명, (select count(주문수량) from 주문세부 " +
+                "where 제품.제품번호 = 주문세부.제품번호) as 총주문건수 from 제품 " +
+                "where 재고 < ? " +
+                "group by 제품.제품번호, 제품명";
+
+        //String query = "select 제품.제품번호, 제품명, count(주문수량) as 총주문건수 " +
+        //                "from 제품 join 주문세부 on 주문세부.제품번호 = 제품.제품번호 " +
+        //                "where 재고 < ? group by 제품.제품번호, 제품명";
+
         List<Map<String,Object>> Stock = new ArrayList<>();
         try(Connection conn = DriverManager.getConnection(URL,USER,PASSWORD);
             PreparedStatement ps = conn.prepareStatement(query)){
-            ps.setString(1, String.valueOf(stock));
-            try (ResultSet rs = ps.getResultSet()){
+            ps.setInt(1, stock);
+            try (ResultSet rs = ps.executeQuery()){
                 while (rs.next()) {
                     Map<String, Object> stock1 = new HashMap<>();
                     stock1.put("제품번호",rs.getString("제품번호"));
