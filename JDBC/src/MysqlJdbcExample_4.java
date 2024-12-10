@@ -52,6 +52,7 @@ public class MysqlJdbcExample_4 {
                 "from 사원 join 주문 on 주문.사원번호 = 사원.사원번호 " +
                 "where 주문일 <= ? and 주문일 >= adddate(?,interval ? month) " +
                 "group by 사원.사원번호, 이름, 직위";
+        
 
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement ps = conn.prepareStatement(query)){
