@@ -50,27 +50,38 @@ public class MysqlJdbcExample_4 {
     public void getEmployeesWithDuration(String date, int month) {
         String query = "select 사원.사원번호, 이름, 직위 " +
                 "from 사원 join 주문 on 주문.사원번호 = 사원.사원번호 " +
-                "where 주문일 <= ? and 주문일 >= adddate(?,interval ? month)";
+                "where 주문일 <= ? and 주문일 >= adddate(?,interval ? month) " +
+                "group by 사원.사원번호, 이름, 직위";
+
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement ps = conn.prepareStatement(query)){
             ps.setString(1,date);
             ps.setString(2,date);
             ps.setInt(3,month);
             try(ResultSet rs = ps.executeQuery()){
-                String num = rs.getString("사원번호");
-                String name = rs.getString("이름");
-                String position = rs.getString("직위");
-                System.out.println(num+" "+name+" "+position);
+                while (rs.next()) {
+                    String num = rs.getString("사원번호");
+                    String name = rs.getString("이름");
+                    String position = rs.getString("직위");
+                    System.out.println(num + " " + name + " " + position);
+                }
             }
-
         }catch (SQLException e){
             e.printStackTrace();
         }
     }
 
+    // #3. 매개변수로 도시를 전달하고 해당도시별 고객들에 대한 주문년도별 주문건수 조회
+    public void getNumOfOrdersByCity(String city) {
+        String query = "select count(*) from 주문 " +
+                "join 고객 on 주문.고객번호 = 고객.고객번호 " +
+                "";
+
+    }
+
     public static void main(String[] args) {
         MysqlJdbcExample_4 repository = new MysqlJdbcExample_4();
-        //repository.getProductsWithStock(4);
+        repository.getProductsWithStock(4);
         repository.getEmployeesWithDuration("2022-02-01", -3);
     }
 }
