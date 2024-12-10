@@ -74,7 +74,8 @@ public class MysqlJdbcExample_4 {
 
     // #3. 매개변수로 도시를 전달하고 해당도시별 고객들에 대한 주문년도별 주문건수 조회
     public void getNumOfOrdersByCity(String city) {
-        String query = "select 고객.도시, count(*) as 주문건수, year(주문.주문일) as 주문년도 " +
+        String query =
+                "select 고객.도시, count(*) as 주문건수, year(주문.주문일) as 주문년도 " +
                 "from 주문 join 고객 on 주문.고객번호 = 고객.고객번호 " +
                 "where 고객.도시 = ? " +
                 "group by 도시, year(주문.주문일) "+
@@ -82,13 +83,12 @@ public class MysqlJdbcExample_4 {
         try(Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
             PreparedStatement ps = conn.prepareStatement(query)){
             ps.setString(1,city);
-            
             try(ResultSet rs = ps.executeQuery()){
                 while (rs.next()){
                    String cityName = rs.getString("도시");
                    String orderCount = rs.getString("주문건수");
                    String orderYear = rs.getString("주문년도");
-                    System.out.println(cityName + " " +orderCount+" "+orderYear);
+                   System.out.println(cityName + " " +orderCount+" "+orderYear);
                 }
             }
         }catch (SQLException e){
