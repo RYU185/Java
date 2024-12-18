@@ -40,9 +40,11 @@ public class CustomException_3 {
             aa.checkScore(85);
             aa.checkScore((150));
             aa.checkScore(-10);
-        }catch(MinusException | OverException e) {
+        } catch (MinusException | OverException e) {
             System.out.println(e.getMessage());
-            System.out.println(e.getStackTrace());
+            for (StackTraceElement element : e.getStackTrace()) {
+                System.out.println(element);
+            }
         }
     }
 }
