@@ -23,14 +23,15 @@ class MyRTExecption extends RuntimeException{
     }
 }
 
-class A {
+class A {  // 예외 직접 처리
     void setAge(int age) {
         try {
             if (age >= 0) {
                 System.out.println("정상 동작");
             } else {
                 // 예외발생
-                throw new MyException("나이가 음수입니다"); // 반드시 객체를 새로 만들어서 던져야 함
+                // 반드시 사용자 정의 예외의 객체를 새로 만들어서 던져야 함
+                throw new MyException("나이가 음수입니다");
             }
         } catch (MyException e) {
             System.out.println(e.getMessage());
@@ -38,6 +39,30 @@ class A {
     }
 }
 
-public class CustomException_1 {
+class B {  // 예외 전가
+    void setAge(int age) throws MyException {
+        if (age >= 0) {
+            System.out.println("정상 동작");
+        } else {
+            throw new MyException("나이가 음수입니다");
+        }
+    }
+    void callSetAge(int age){
+        try{
+            setAge(age);
+        }catch (MyException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
 
+
+public class CustomException_1 {
+    public static void main(String[] args) {
+        A a = new A(); // 예외 직접처리
+        a.setAge(-1);
+
+        B b = new B(); // 예외 전가처리
+        b.callSetAge(-1);
+    }
 }
