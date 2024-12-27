@@ -52,3 +52,6 @@ from 사원
 group by 직위, 이름
 order by 직위;
 
+select * from 제품
+where 제품명 like "%주스%";
+

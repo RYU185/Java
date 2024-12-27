@@ -93,3 +93,7 @@ select 담당자직위
 select 도시    , group_concat(고객회사명) as 고객회사명목록 
   from 고객
  group by 도시;
+ 
+select year(주문.주문일), count(*)
+from 주문
+join 고객 on 고객.고객번호 = 주문.고객번호;
