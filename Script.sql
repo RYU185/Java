@@ -37,8 +37,17 @@ limit 10; -- 갯수 제한
 select 도시 from 고객;
 select distinct 도시 from 고객; -- 중복제외 도시 갯수
 
+select 고객.도시, sum(주문수량*단가) as 주문금액합 from 주문세부
+join 주문 on 주문세부.주문번호 = 주문.주문번호 
+join 고객 on 고객.고객번호 = 주문.고객번호 
+group by 고객.도시
+order by 도시;
 
-
+select 도시, count(*) as 주문건수 from 주문
+join 고객 on 고객.고객번호 = 주문.고객번호 
+where year(주문일)
+group by 도시
+order by 주문건수 desc;
 
 
 
