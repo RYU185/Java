@@ -107,6 +107,7 @@ order by 단가 desc
 limit 1;
 
 
+
 -- 7-1 join query 변환
 select 제품명, max(주문세부.단가) as 단가
 from 제품
